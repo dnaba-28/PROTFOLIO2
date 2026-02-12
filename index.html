@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo5.jpeg" class="logo" >
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm Nabanita,
+                a FULL-STACK <br/>DEVELOPER specializing 
+                in <br/>high-performance applications<br/> and 
+                seamless API integrations.
+                </h1>
+                <div ><a href="Naba_CV.pdf" target="_blank" rel="noopener" class="btnn" >Download CV</a></div>
+            </div>
+
+        </div>
+    
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="nabanita.jpeg" >
+
+                </div>
+
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p>Developer|Problem solver| Tech Enthusiast<br/>
+                        I build high-performance applications and seamless API integrations. 
+                        With a passion for coding and a knack for problem-solving, 
+                        I thrive on creating efficient and scalable solutions. 
+                        My expertise spans across various technologies, allowing me to deliver 
+                        robust applications that meet the needs of users and businesses alike.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>website Developer</li>
+                            <li><span>UI/UX </span><br>Designing web/App interface</li>
+                            <li><span>DSA</span><br>JAVA</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2026-current</span><br>4IFOOD APP</li>
+                            <li><span>2025</span><br>TRAVEL APP</li>
+                            <li><span>2024</span><br>FRONTEND DEVELOPER</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-2028</span><br>Mechanical Engineer</li>
+                            <li><span>class-12</span><br>84%</li>
+                            <li><span>class-10</span><br>94.6%</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--.............portfolio.............-->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <a href="https://github.com/dnaba-28/4ifood.git"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                <img src="food.jpeg" >
+                
+                <h2>4IFOOD APP</h2>
+                
+                
+            </div>
+
+            <div class="work">
+                <a href="https://github.com/dnaba-28/TRAVEL-APP.git"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                <img src="travelto.jpeg" >
+                
+                <h2>TRAVEL APP</h2>
+                
+            </div>
+
+            <div class="work">
+                <a href="https://github.com/SantanuDas7095/NIT-Agartala-CEWN.git"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                <img src="hospital.jpeg" >
+                
+                <h2>EMERGENCY SOS APP</h2>
+                
+                
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+
+    </div>
+
+</div>
+
+<!--.............contact.............-->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact me</h1>
+        <div class="contact-list">
+           <i class="fa-solid fa-envelope"></i> <p>dnnabanita@gmail.com</p>
+           <i class="fa-solid fa-phone"></i> <p>+91 9402329709</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nabanita-debnath-524018336"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/dnaba-28"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/_nabanita_s9/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+        
+    </div>
+</div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
