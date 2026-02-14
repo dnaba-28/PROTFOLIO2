@@ -117,14 +117,14 @@ nav ul li a:hover{
 }
 .about-col-2 h1{
     padding-top: 40px;
-    font-size: 60px;
+    font-size: 15px;
     font-weight: 900;
 }
 .about-col-2 p{
     padding: 20px 0;
-    font-size: 18px;
+
     line-height: 1.5;
-    font-size: 25px;
+    font-size: 20px;
 }
 .tab-titles{
     display: flex;
